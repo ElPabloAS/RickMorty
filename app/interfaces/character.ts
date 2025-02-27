@@ -3,7 +3,7 @@ import type { Location } from './location';
 
 export interface Character {
     id: number;
-    name: string | null;
+    name: string ;
     status: string | null;
     species: string | null;
     type: string | null;

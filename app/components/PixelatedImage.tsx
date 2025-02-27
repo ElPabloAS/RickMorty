@@ -9,15 +9,8 @@ interface PixelatedImageProps {
 export default function PixelatedImage({ imageUrl, pixelSize }: PixelatedImageProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  // Comprobar si canvasRef.current no es null antes de ejecutar el hook
-  useEffect(() => {
-    if (canvasRef.current) {
-   
-      usePixelatedImage(canvasRef as React.RefObject<HTMLCanvasElement>, imageUrl, pixelSize);
-    }
-  }, [imageUrl, pixelSize]);
+  // Asegúrate de que canvasRef no es null usando el operador de aserción no nula
+  usePixelatedImage(canvasRef as React.RefObject<HTMLCanvasElement>, imageUrl, pixelSize);
 
-  if (!canvasRef.current) return null;
-
-  return <canvas ref={canvasRef} width={300} height={300} className="w-full h-full object-cover" />;
+  return <canvas ref={canvasRef} height={300} className="w-full h-full object-cover" />;
 }
