@@ -1,7 +1,7 @@
 import type { Route } from "./+types/home";
 
 import  CardCharacter from "../components/CardCharacter";
-
+import  CardDetailCharacter from "../components/CardDetailCharacter";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "New React Router App" },
@@ -10,6 +10,6 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <CardCharacter />;
+  return <CardDetailCharacter />;
   
 }

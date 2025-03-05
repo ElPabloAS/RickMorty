@@ -44,9 +44,11 @@ export default function CharacterList() {
 
   return (
     <div className="container mx-auto px-4 py-8 bg-tardis-blue">
-       <Link to="/characters"></Link>
+        <Link to="/characters"></Link>
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {characters.map((character) => (
+           <Link key={character.id} to={`/character/${character.id}`}>
           <div key={character.id} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
             <div className="card-image">
               <img src={character.image || "/placeholder.svg"} alt={character.name} />
@@ -57,6 +59,7 @@ export default function CharacterList() {
              
             </div>
           </div>
+          </Link>
         ))}
       </div>
 
