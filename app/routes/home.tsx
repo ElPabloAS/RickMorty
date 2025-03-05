@@ -10,6 +10,6 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <CardDetailCharacter />;
+  return <h1> Hola Mundo! </h1>;
   
 }
