@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import type { Character } from "~/interfaces/character";
-import CharacterDetail from "~/components/CardDetailCharacter";
+import CharacterDetail from "~/components/allCharacters/CardDetailCharacter";
 
 export default function CharacterDetailPage() {
   const { id } = useParams();

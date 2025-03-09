@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import PixelatedImage from "./PixelatedImage";
-import CharacterSelect from "./guessCharacter/CharacterSelect";
-import GameStatus from "./guessCharacter/GameStatus";
-import GuessButton from "./guessCharacter/GuessButton";
-import RestartButton from "./guessCharacter/RestartButton";
-import { useFetchCharacters } from "./hooks/useFetchCharacters";
-import type { Character } from "../interfaces/character";
+import CharacterSelect from "./CharacterSelect";
+import GameStatus from "./GameStatus";
+import GuessButton from "./GuessButton";
+import RestartButton from "./RestartButton";
+import { useFetchCharacters } from "../hooks/useFetchCharacters";
+import type { Character } from "../../interfaces/character";
 
 const PIXEL_SIZE = [20, 15, 10, 5, 1];
 const LIVES = 5;

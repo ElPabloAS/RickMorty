@@ -13,7 +13,7 @@ function SectionCardHome() {
           description="Meet the most intriguing beings in the multiverse" 
         />
         <CardHome 
-          href="/characters" 
+          href="/guessCharacter" 
           icon="../lawyermorty.gif" 
           title="Guess" 
           description="Test your knowledge of the series" 
