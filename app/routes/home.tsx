@@ -1,15 +1,15 @@
-import type { Route } from "./+types/home";
 
-import  CardCharacter from "../components/CardCharacter";
-import  CardDetailCharacter from "../components/CardDetailCharacter";
+import type { Route } from "./+types/home";
+import ContainerHome from "~/components/ContainerHome";
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Rick and Morty" },
+    { name: "description", content: "Rick and Morty" },
   ];
 }
 
 export default function Home() {
-  return <h1> Hola Mundo! </h1>;
-  
+  return <>
+  <ContainerHome />
+  </>
 }
