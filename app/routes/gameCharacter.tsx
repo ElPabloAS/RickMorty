@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import GuessCharacter from "../components/GuessCharacter";
+import Header from "~/components/Header";
+import Footer from "~/components/Footer";
 import type { Character } from "../interfaces/character";
 
 export default function GameCharacter() {
@@ -62,9 +64,13 @@ export default function GameCharacter() {
 
   // Pasar el personaje aleatorio y la función de reinicio al componente GuessCharacter
   return (
-    <GuessCharacter
-      character={randomCharacter}
-      onRestart={fetchRandomCharacter} // Pasamos la función de reinicio
-    />
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <GuessCharacter
+        character={randomCharacter}
+        onRestart={fetchRandomCharacter} // Pasamos la función de reinicio
+      />
+      <Footer />
+    </div>
   );
 }
