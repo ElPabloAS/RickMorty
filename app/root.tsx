@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {
   isRouteErrorResponse,
   Links,
@@ -7,10 +10,14 @@ import {
   ScrollRestoration,
 } from "react-router";
 
-import type { Route } from "./+types/root";
+import type { Route as RouteType } from "./+types/root";
 import "./app.css";
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './routes/home';
+import ListadoCharacters from './routes/ListadoCharacters';
 
-export const links: Route.LinksFunction = () => [
+export const links: RouteType.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
@@ -45,7 +52,7 @@ export default function App() {
   return <Outlet />;
 }
 
-export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
+export function ErrorBoundary({ error }: RouteType.ErrorBoundaryProps) {
   let message = "Oops!";
   let details = "An unexpected error occurred.";
   let stack: string | undefined;
@@ -73,3 +80,19 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
     </main>
   );
 }
+
+const MainApp: React.FC = () => {
+  return (
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/listado-characters" element={<ListadoCharacters />} />
+        {/* ...otras rutas... */}
+      </Routes>
+      <Footer />
+    </Router>
+  );
+};
+
+ReactDOM.render(<MainApp />, document.getElementById('root'));
