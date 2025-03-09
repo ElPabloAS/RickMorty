@@ -4,4 +4,6 @@ export default [
     index("routes/home.tsx"), 
     route("characters", "routes/ListadoCharacters.tsx"), 
     route("characters/:id", "routes/DetailCharacter.tsx"), 
+
+  
 ] satisfies RouteConfig;

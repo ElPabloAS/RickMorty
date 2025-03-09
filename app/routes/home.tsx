@@ -1,6 +1,6 @@
-
 import type { Route } from "./+types/home";
 import ContainerHome from "~/components/ContainerHome";
+
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Rick and Morty" },
@@ -9,7 +9,9 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <>
-  <ContainerHome />
-  </>
+  return (
+    <>
+      <ContainerHome />
+    </>
+  );
 }
