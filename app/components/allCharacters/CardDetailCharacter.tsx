@@ -9,7 +9,7 @@ export default function CharacterDetail({ character }: Props) {
 
 
   return (
-   <div className="container mx-auto px-4 py-8 flex justify-center">
+   <div className="container mx-auto mt-29 mb-29 px-4 py-8 flex justify-center">
     {character && (
       <div className="bg-green1/30 hover:shadow-xl transition-all duration-300 hover:bg-green1/40 backdrop-blur-lg rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center space-y-6 md:space-x-6 md:space-y-0 border border-white/40 border-opacity-30 max-w-3xl w-full">
         <img

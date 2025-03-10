@@ -23,7 +23,7 @@ function SectionCardHome() {
      
      
     </div>
-     <div className="flex justify-center m-10">
+     <div className="flex justify-center m-11">
      <ButtonExplore />
    </div>
    </>
