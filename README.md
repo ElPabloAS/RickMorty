@@ -6,7 +6,7 @@
 
 ## Descripción
 
-Este proyecto consiste en una aplicación web creada con **React Router** y **TypeScript**, que permite acceder y consumir la [API de Rick and Morty](https://rickandmortyapi.com/). A través de esta app, los usuarios pueden explorar los personajes, episodios y ubicaciones del universo de Rick y Morty.
+Este proyecto consiste en una aplicación web creada con **React Router** y **TypeScript**, que permite acceder y consumir la [API de Rick and Morty](https://rickandmortyapi.com/). A través de esta app, los usuarios pueden explorar los personajes del universo de Rick y Morty.
 
 El diseño de la aplicación ha sido realizado utilizando **Tailwind CSS** para asegurar una interfaz limpia, moderna y responsive.
 
