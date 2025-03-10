@@ -4,7 +4,7 @@ import SectionCardHome from "./SectionCardHome";
 function ContainerHome() {
     return (
         <div>
-            <div className="text-center mt-10 mb-10">
+            <div className="text-center mt-10 mb-10 bg-white">
             <h1 className="text-6xl font-extrabold  text-black">
             Rick and Morty<br/>
             <span className="block text-6xl bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-yellow-400">Multiverse</span>
