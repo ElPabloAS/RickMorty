@@ -52,6 +52,11 @@ La estructura del proyecto se organiza de la siguiente manera:
   - **`/Interfaces`**: Contiene todas las interfaces que utilizamos en el proyecto para la tipificación de datos.
   - **`/Routes`**: Aquí se definen las rutas del proyecto, así como las funciones para realizar peticiones a la API.
 
+## Enlaces
+- [Desplegado](https://rickmorty-six.vercel.app/)
+  
+- [Repositorio](https://github.com/ElPabloAS/RickMorty)
+
 
 
 ## Instrucciones de instalación
